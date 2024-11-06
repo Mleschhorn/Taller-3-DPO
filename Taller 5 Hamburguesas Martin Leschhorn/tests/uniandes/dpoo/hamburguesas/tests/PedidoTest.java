@@ -18,7 +18,7 @@ public class PedidoTest {
     @BeforeEach
     public void setUp() {
         pedido = new Pedido("Eugenio", "Calle 113");
-        papas = new ProductoMenu("Papas Namek", 9000);
+        papas = new ProductoMenu("Papas Picantes", 9000);
         hamburguesa = new ProductoMenu("Hamburguesa Mexicana", 24000);
         
     }
@@ -32,7 +32,7 @@ public class PedidoTest {
         assertTrue(factura.contains("Cliente: Eugenio"));
         assertTrue(factura.contains("Dirección: Calle 113"));
         assertTrue(factura.contains("Hamburguesa Mexicana"));
-        assertTrue(factura.contains("Papas Namek"));
+        assertTrue(factura.contains("Papas Picantes"));
         assertTrue(factura.contains("Precio Total"));
     }
 
